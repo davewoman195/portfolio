@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+  @apply bg-black;
+  @apply text-gray-300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading;
+}
+
+.megaHeading {
+  @apply font-heading;
+  @apply leading-none;
+  @apply text-green-500;
+  @apply font-medium;
+  @apply max-w-full;
+  @apply overflow-visible;
+
+  font-size: clamp(5rem, 21vw, 20rem);
+  line-height: 0.9;
+}
+
+a {
+  @apply transition;
+  @apply duration-200;
+
+  &:hover,
+  &:focus {
+    @apply text-green-500;
+  }
+}
+
+.container {
+  @apply px-6;
+}
+
+.appearance-none {
+  appearance: none;
+  -webkit-appearance: none;
+}
